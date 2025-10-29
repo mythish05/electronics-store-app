@@ -1,0 +1,113 @@
+/* General Styling */
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: #f8f9fa;
+}
+
+.app-container {
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  color: #0077cc;
+  margin-bottom: 20px;
+}
+
+/* Form */
+.item-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.item-form input {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  flex: 1 1 150px;
+}
+
+.item-form button {
+  background: #0077cc;
+  color: white;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.item-form button:hover {
+  background: #005fa3;
+}
+
+/* Filter and Sort Controls */
+.filter-controls {
+  margin: 15px 0;
+}
+
+.filter-controls input {
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+}
+
+.filter-controls button {
+  margin-left: 10px;
+  background: #28a745;
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.filter-controls button:hover {
+  background: #218838;
+}
+
+/* Item List */
+.item-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 15px;
+}
+
+.item-card {
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+  text-align: left;
+}
+
+.item-card h3 {
+  margin: 0 0 10px;
+  color: #333;
+}
+
+.item-card p {
+  margin: 5px 0;
+}
+
+.item-card button {
+  background: #dc3545;
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.item-card button:hover {
+  background: #b02a37;
+}
+
+.empty {
+  grid-column: 1 / -1;
+  text-align: center;
+  color: #777;
+}
